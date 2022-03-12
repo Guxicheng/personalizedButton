@@ -1,0 +1,84 @@
+.lu-button {
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    text-align: center;
+    margin-left: 10px;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+}
+
+.lu-button:focus,
+.lu-button:hover {
+    border-color: #7bbfea;
+    color: #7bbfea;
+}
+
+.lu-button--primary {
+    color: #fff;
+    background-color: #33a3dc;
+    border-color: #33a3dc;
+}
+
+.lu-button--primary:focus,
+.lu-button--primary:hover {
+    background: #7bbfea;
+    border-color: #7bbfea;
+    color: #fff;
+}
+
+.lu-button--success {
+    color: #fff;
+    background-color: #1d953f;
+    border-color: #1d953f;
+}
+
+.lu-button--success:focus,
+.lu-button--success:hover {
+    background: #45b97c;
+    border-color: #45b97c;
+    color: #fff;
+}
+
+.lu-button--info {
+    color: #fff;
+    background-color: #77787b;
+    border-color: #77787b;
+}
+
+.lu-button--info:focus,
+.lu-button--info:hover {
+    background: #8a8c8e;
+    border-color: #8a8c8e;
+    color: #fff;
+}
+
+.lu-button--warning {
+    color: #fff;
+    background-color: #fcaf17;
+    border-color: #fcaf17;
+}
+
+.lu-button--warning:focus,
+.lu-button--warning:hover {
+    background: #fdb933;
+    border-color: #fdb933;
+    color: #fff;
+}
+
+.lu-button--danger {
+    color: #fff;
+    background-color: #ed1941;
+    border-color: #ed1941;
+}
+
+.lu-button--danger:focus,
+.lu-button--danger:hover {
+    background: #d71345;
+    border-color: #d71345;
+    color: #fff;
+}
