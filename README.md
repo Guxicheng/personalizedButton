@@ -1,24 +1,5 @@
 # mybuttons
+<img width="895" alt="image" src="https://user-images.githubusercontent.com/33475973/159418152-45b4cbb3-ae8f-4d5d-a93b-7de9433c7e97.png">
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# npm 下载:
+npm i lu-button
