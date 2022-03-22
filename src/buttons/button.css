@@ -1,3 +1,7 @@
+.btns {
+    margin-bottom: 20px;
+}
+
 .lu-button {
     padding: 12px 20px;
     font-size: 14px;
@@ -10,6 +14,34 @@
     margin-left: 10px;
     text-shadow: 0 1px 0 rgb(0 0 0 / 12%);
     box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+}
+
+.lu-button--medium {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.lu-button--small {
+    padding: 9px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.lu-button--mini {
+    padding: 7px 15px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.lu-button.is-round {
+    border-radius: 20px;
+}
+
+.lu-button.is-circle {
+    border-radius: 50%;
+    padding: 12px;
+    line-height: 1;
 }
 
 .lu-button:focus,
@@ -52,8 +84,8 @@
 
 .lu-button--info:focus,
 .lu-button--info:hover {
-    background: #8a8c8e;
-    border-color: #8a8c8e;
+    background: #c8c9cc;
+    border-color: #c8c9cc;
     color: #fff;
 }
 
@@ -81,4 +113,269 @@
     background: #d71345;
     border-color: #d71345;
     color: #fff;
+}
+
+.lu-button.is-disabled {
+    cursor: not-allowed;
+    color: #c0c4cc;
+    background-color: #fff;
+    border-color: #ebeef5;
+}
+
+.lu-button--primary.is-disabled {
+    color: #fff;
+    background-color: #7bbfea;
+    border-color: #7bbfea;
+}
+
+.lu-button--success.is-disabled {
+    color: #fff;
+    background-color: #45b97c;
+    border-color: #45b97c;
+}
+
+.lu-button--info.is-disabled {
+    color: #fff;
+    background-color: #c8c9cc;
+    border-color: #c8c9cc;
+}
+
+.lu-button--warning.is-disabled {
+    color: #fff;
+    background-color: #f3d19e;
+    border-color: #f3d19e;
+}
+
+.lu-button--danger.is-disabled {
+    color: #fff;
+    background-color: #fab6b6;
+    border-color: #fab6b6;
+}
+
+.lu-button--draw::before,
+.lu-button--draw::after {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.lu-button--draw {
+    position: relative;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+}
+
+.lu-button--draw::before,
+.lu-button--draw::after {
+    border: 1px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.lu-button--draw::before {
+    top: 0;
+    left: 0;
+}
+
+.lu-button--draw::after {
+    bottom: 0;
+    right: 0;
+}
+
+.lu-button--draw:hover {
+    color: #60daaa;
+}
+
+.lu-button--draw:hover::before,
+.lu-button--draw:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.lu-button--draw:hover::before {
+    border-top-color: #60daaa;
+    border-right-color: #60daaa;
+    -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+
+.lu-button--draw:hover::after {
+    border-bottom-color: #60daaa;
+    border-left-color: #60daaa;
+    -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+.lu-button--center {
+    position: relative;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+}
+
+.lu-button--center::before,
+.lu-button--center::after {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.lu-button--center:hover {
+    color: #6477b9;
+}
+
+.lu-button--center::before,
+.lu-button--center::after {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+
+.lu-button--center::before {
+    border-top: 2px solid #6477b9;
+    border-bottom: 2px solid #6477b9;
+    -webkit-transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
+}
+
+.lu-button--center::after {
+    border-left: 2px solid #6477b9;
+    border-right: 2px solid #6477b9;
+    -webkit-transform: scale3d(1, 0, 1);
+    transform: scale3d(1, 0, 1);
+}
+
+.lu-button--center:hover::before,
+.lu-button--center:hover::after {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.lu-button--spin {
+    position: relative;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+}
+
+.lu-button--spin::before,
+.lu-button--spin::after {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.lu-button--spin {
+    width: 6em;
+    height: 6em;
+    padding: 0;
+}
+
+.lu-button--spin:hover {
+    color: #0eb7da;
+}
+
+.lu-button--spin::before,
+.lu-button--spin::after {
+    top: 0;
+    left: 0;
+}
+
+.lu-button--spin::before {
+    border: 2px solid transparent;
+}
+
+.lu-button--spin:hover::before {
+    border-top-color: #0eb7da;
+    border-right-color: #0eb7da;
+    border-bottom-color: #0eb7da;
+    -webkit-transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+}
+
+.lu-button--spin::after {
+    border: 0 solid transparent;
+}
+
+.lu-button--spin:hover::after {
+    border-top: 2px solid #0eb7da;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -webkit-transition: -webkit-transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+}
+
+.lu-button--circle {
+    position: relative;
+    border: 0;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+    border-radius: 50%;
+    box-shadow: none;
+}
+
+.lu-button--circle::before,
+.lu-button--circle::after {
+    border-radius: 50%;
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.lu-button--circle {
+    width: 6em;
+    height: 6em;
+    padding: 0;
+}
+
+.lu-button--circle:hover {
+    color: #0eb7da;
+}
+
+.lu-button--circle::before,
+.lu-button--circle::after {
+    top: 0;
+    left: 0;
+}
+
+.lu-button--circle::before {
+    border: 2px solid transparent;
+}
+
+.lu-button--circle:hover::before {
+    border-top-color: #0eb7da;
+    border-right-color: #0eb7da;
+    border-bottom-color: #0eb7da;
+    -webkit-transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+    transition: border-top-color 0.15s linear, border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+}
+
+.lu-button--circle::after {
+    border: 0 solid transparent;
+}
+
+.lu-button--circle:hover::after {
+    border-top: 2px solid #0eb7da;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    -webkit-transition: -webkit-transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+    transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
 }
